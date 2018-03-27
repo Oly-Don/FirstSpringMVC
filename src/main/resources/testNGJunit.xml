@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--
+testester.courceurce
+http://www.yiibai.com/testng/basic-annotations.html
+
+name	套件的名称，这是一个强制属性。
+verbose	运行的级别或详细程度。
+parallel	TestNG是否运行不同的线程来运行这个套件。
+thread-count	如果启用并行模式(忽略其他方式)，则要使用的线程数。
+annotations	在测试中使用的注释类型。
+time-out	在本测试中的所有测试方法上使用的默认超时。
+
+http://www.yiibai.com/testng/junit-vs-testng-comparison.html#article-start
+-->
+<suite name="Converted JUnit suite">
+    <!--testng转换为junit-->
+    <test name="JUnitTests" junit="true">
+        <classes>
+            <class name="com.oly.common.main"/>
+            <!--<class name="publish.op.SuitOpPubTask"/>-->
+        </classes>
+    </test>
+    <listeners>
+        <!--<listener class-name="drivers.listener.RetryListerner"/>-->
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+</suite>
