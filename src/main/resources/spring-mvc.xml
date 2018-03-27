@@ -63,4 +63,7 @@
             </list>
         </property>
     </bean>
+
+    <!--测试本地的hello-->
+    <bean name="/sayhello" class="com.oly.controller.SayHelloController"/>
 </beans>
