@@ -12,7 +12,6 @@ public class SayHelloController implements Controller {
 
     Logger logger = LoggerFactory.getLogger(SayHelloController.class);
 
-
     //    spring-mvc.xml    <bean name="/sayhello" class="com.oly.controller.test.SayHelloController"/>  带 /符号
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) {
         logger.info("com.oly.controller.test.SayHelloController.handleRequest has been call once");

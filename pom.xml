@@ -50,6 +50,11 @@
         <log4j.version>1.2.17</log4j.version>
         <testng.version>6.11</testng.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!--allure版本信息-->
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <timestamp>2018-03-16_18_56_43</timestamp>
+        <allure.version>1.4.23</allure.version>
+        <aspectj.version>1.7.4</aspectj.version>
     </properties>
 
     <dependencies>
@@ -262,6 +267,29 @@
         </dependency>
 
 
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>3.0.0</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>1.7.0</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <!--https://blog.csdn.net/darkmanno5/article/details/72795052-->
+        <!--allure的testng插件-->
+        <dependency>
+            <groupId>ru.yandex.qatools.allure</groupId>
+            <artifactId>allure-testng-adaptor</artifactId>
+            <version>1.5.2</version>
+        </dependency>
     </dependencies>
 
 </project>

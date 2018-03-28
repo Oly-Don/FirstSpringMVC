@@ -64,6 +64,6 @@
         </property>
     </bean>
 
-    <!--测试本地的hello-->
+    <!--测试本地的hello       不需要注解,访问sayhello 执行SayHelloController的方法-->
     <bean name="/sayhello" class="com.oly.controller.test.SayHelloController"/>
 </beans>

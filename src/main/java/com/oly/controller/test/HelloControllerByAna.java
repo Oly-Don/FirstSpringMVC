@@ -16,8 +16,7 @@ public class HelloControllerByAna {
         logger.info("com.oly.controller.test.HelloControllerByAna.hello has been call once");
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("message", "this is from spring mvc");
-        modelAndView.setViewName("/WEB-INF/views/welcome.jsp");
+        modelAndView.setViewName("welcome.jsp");
         return modelAndView;
-
     }
 }

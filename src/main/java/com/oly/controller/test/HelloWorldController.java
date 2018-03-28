@@ -19,14 +19,14 @@ public class HelloWorldController {
     @RequestMapping(value = "/message", method = RequestMethod.POST, consumes = "application/json", headers = "Content-Language=en")
     public String helloWorld(ModelAndView modelAndView) {
         modelAndView.addObject("message", "helloworld1");
-        return "helloworld/helloworld";
+        return "helloworld";
     }
 
     //http://localhost:8080/FirstSpringMVC/oly/path
     @RequestMapping(value = "/path", method = RequestMethod.GET, produces = "text/html;charset=utf-8")
     public String addPath(ModelAndView modelAndView) {
         modelAndView.addObject("message", "helloworld2");
-        return "helloworld/hellopath";
+        return "hellopath";
     }
 
     @RequestMapping(value = "/request")
@@ -41,7 +41,7 @@ public class HelloWorldController {
     @RequestMapping(value = "/default")
     public String defaultPage(Model model) {
         System.out.println(model.asMap().get("id"));
-        return "helloworld/hellopath";
+        return "hellopath";
     }
 
     @ModelAttribute
