@@ -1,4 +1,4 @@
-package com.oly.controller;
+package com.oly.controller.test;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,12 +13,12 @@ public class SayHelloController implements Controller {
     Logger logger = LoggerFactory.getLogger(SayHelloController.class);
 
 
-    //    spring-mvc.xml    <bean name="/sayhello" class="com.oly.controller.SayHelloController"/>  带 /符号
+    //    spring-mvc.xml    <bean name="/sayhello" class="com.oly.controller.test.SayHelloController"/>  带 /符号
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) {
-        logger.info("com.oly.controller.SayHelloController.handleRequest has been call once");
+        logger.info("com.oly.controller.test.SayHelloController.handleRequest has been call once");
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("message", "this is from spring mvc");
-        modelAndView.setViewName("/js/Welcome.jsp");
+        modelAndView.setViewName("/WEB-INF/views/welcome");
         return modelAndView;
     }
 }

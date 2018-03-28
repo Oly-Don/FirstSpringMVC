@@ -1,4 +1,4 @@
-package com.oly.controller;
+package com.oly.controller.test;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,10 +13,10 @@ public class HelloControllerByAna {
 
     @RequestMapping(value = "/hello")
     public ModelAndView hello() {
-        logger.info("com.oly.controller.HelloControllerByAna.hello has been call once");
+        logger.info("com.oly.controller.test.HelloControllerByAna.hello has been call once");
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("message", "this is from spring mvc");
-        modelAndView.setViewName("/WEB-INF/index.jsp");
+        modelAndView.setViewName("/WEB-INF/views/welcome.jsp");
         return modelAndView;
 
     }
