@@ -101,10 +101,10 @@
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc6</artifactId>
             <version>11.2.0.1.0</version>
-            <!--<type>jar</type>-->
-            <!-- 注意scope是system  -->
-            <!--<scope>system</scope>-->
-            <!--<systemPath>${project.basedir}/src/main/resources/ojdbc6.jar</systemPath>-->
+            <type>jar</type>
+            <!--注意scope是system-->
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/ojdbc6.jar</systemPath>
             <!-- systemPath 可以写  1 本地路径 也可以写 2 项目根路径,项目根路径不是相对classpath -->
             <!--https://blog.csdn.net/viktoria/article/details/77503266
             mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0.1.0 -Dpackaging=jar -Dfile=ojdbc6.jar
