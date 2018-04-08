@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <html>
 <head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <title>注册 用户</title>
 </head>
 <body>

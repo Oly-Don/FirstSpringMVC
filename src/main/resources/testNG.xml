@@ -15,7 +15,9 @@ http://www.yiibai.com/testng/junit-vs-testng-comparison.html#article-start
 -->
 <suite name="Converted JUnit suite">
     <!--testng转换为junit-->
-    <test name="JUnitTests" junit="true">
+    <!--<test name="JUnitTests" junit="true">-->
+    <!--testng 格式-->
+    <test name="JUnitTests">
         <classes>
             <class name="com.oly.common.main"/>
             <!--<class name="publish.op.SuitOpPubTask"/>-->
@@ -23,7 +25,7 @@ http://www.yiibai.com/testng/junit-vs-testng-comparison.html#article-start
     </test>
     <listeners>
         <!--<listener class-name="drivers.listener.RetryListerner"/>-->
-        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <!--<listener class-name="org.uncommons.reportng.HTMLReporter"/>-->
+        <!--<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>-->
     </listeners>
 </suite>

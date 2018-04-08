@@ -1,10 +1,10 @@
 package com.set.tools;
 
-import org.testng.annotations.Test;
+//import org.testng.annotations.Test;
 
 public class AssertCoreTest {
 
-    @Test
+    //    @Test
     public void testAssert() {
 
     }

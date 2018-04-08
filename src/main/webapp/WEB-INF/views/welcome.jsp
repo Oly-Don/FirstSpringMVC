@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <title>欢迎!</title>
 </head>
 <body>

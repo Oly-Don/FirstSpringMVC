@@ -1,0 +1,3 @@
+FastJSON库
+JSONArray：相当于List<Object>
+JSONObject：相当于Map<String, Object>
