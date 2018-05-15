@@ -1,4 +1,4 @@
-package com.set.web.http;
+package com.oly.web.http;
 
 import io.restassured.http.ContentType;
 import io.restassured.path.xml.XmlPath;
@@ -21,7 +21,6 @@ public class RestAssuredFirstTest {
     public void setUp() {
 
     }
-
 
     @Test
     public void testRestAssured() throws Exception {

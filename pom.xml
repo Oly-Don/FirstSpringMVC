@@ -26,7 +26,20 @@
         </resources>
 
 
+
+
         <plugins>
+            <!--静态代码分析-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>3.0.4</version>
+                <configuration>
+                    <findbugsXmlOutput>true</findbugsXmlOutput>
+                    <!--<findbugsXmlWithMessages>true</findbugsXmlWithMessages>-->
+                    <xmlOutput>true</xmlOutput>
+                </configuration>
+            </plugin>
             <!--mybatis 逆向工程插件-->
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
@@ -61,6 +74,14 @@
                         <file>${basedir}/src/main/resources/testNG.xml</file>
                     </suiteXmlFiles>
                     <workingDirectory>target/</workingDirectory>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
         </plugins>

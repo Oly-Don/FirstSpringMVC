@@ -17,15 +17,19 @@ http://www.yiibai.com/testng/junit-vs-testng-comparison.html#article-start
     <!--testng转换为junit-->
     <!--<test name="JUnitTests" junit="true">-->
     <!--testng 格式-->
-    <test name="JUnitTests">
+    <test name="JUnitTests" thread-count="5" time-out="100000" parallel="methods">
         <classes>
-            <class name="com.oly.common.main"/>
+            <class name="com.oly.web.http.PSPTest">
+                <methods>
+                    <include name = "tesCargoBack" />
+                </methods>
+            </class>
             <!--<class name="publish.op.SuitOpPubTask"/>-->
         </classes>
     </test>
     <listeners>
         <!--<listener class-name="drivers.listener.RetryListerner"/>-->
-        <!--<listener class-name="org.uncommons.reportng.HTMLReporter"/>-->
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
         <!--<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>-->
     </listeners>
 </suite>
