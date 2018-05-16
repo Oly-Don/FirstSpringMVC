@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="GBK" ?>
+<Root>
+    <sample>
+        <!--<url>192.168.45.165</url>-->
+        <method>post</method>
+        <port>9990</port>
+        <path>/postJson</path>
+        <body>{"A":"a","B":"2","body":["2",2]}</body>
+        <status>999</status>
+        <application>application/json</application>
+    </sample>
+    <sample>
+        <!--<url>192.168.45.165</url>-->
+        <method>get</method>
+        <port>8080</port>
+        <path>/getJson</path>
+        <body>{"A":"a","B":"2","body":["2",2]}</body>
+        <status>888</status>
+        <application>application/xml</application>
+    </sample>
+</Root>

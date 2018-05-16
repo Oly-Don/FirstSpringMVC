@@ -26,8 +26,6 @@
         </resources>
 
 
-
-
         <plugins>
             <!--静态代码分析-->
             <plugin>
@@ -354,6 +352,28 @@
             <artifactId>allure-testng-adaptor</artifactId>
             <version>1.5.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+
+        <!--单元测试mockito-->
+        <!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.10.19</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.3</version>
+        </dependency>
+
         <!--mock自定义测试模块-->
         <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/mockwebserver -->
         <!--https://github.com/square/okhttp/tree/master/mockwebserver-->
