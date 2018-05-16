@@ -84,6 +84,10 @@
           <element id="library" level="project" name="Maven: org.jvnet.jaxb2_commons:jaxb2-basics-runtime:0.9.3" />
           <element id="library" level="project" name="Maven: ru.qatools.commons:properties:2.0.RC5" />
           <element id="library" level="project" name="Maven: org.apache.tika:tika-core:1.7" />
+          <element id="library" level="project" name="Maven: com.squareup.okhttp3:mockwebserver:3.6.0" />
+          <element id="library" level="project" name="Maven: com.squareup.okhttp3:okhttp:3.6.0" />
+          <element id="library" level="project" name="Maven: com.squareup.okio:okio:1.11.0" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15on:1.50" />
         </element>
       </element>
       <element id="directory" name="META-INF">
