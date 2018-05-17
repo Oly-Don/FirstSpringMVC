@@ -18,14 +18,11 @@ http://www.yiibai.com/testng/junit-vs-testng-comparison.html#article-start
     <!--<test name="JUnitTests" junit="true">-->
     <!--testng 格式-->
     <test name="JUnitTests" thread-count="5" time-out="100000" parallel="methods">
-        <classes>
-            <class name="com.oly.web.http.RDPReceiveTest">
-                <methods>
-                    <include name = "tesCargoBack" />
-                </methods>
-            </class>
-            <!--<class name="publish.op.SuitOpPubTask"/>-->
-        </classes>
+        <packages>
+            <package name="com.oly.icip">
+                <include name="*est*"/>
+            </package>
+        </packages>
     </test>
     <listeners>
         <!--<listener class-name="drivers.listener.RetryListerner"/>-->

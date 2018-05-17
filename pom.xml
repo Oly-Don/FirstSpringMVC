@@ -14,7 +14,7 @@
         <resources>
             <!--表示把java目录下的有关xml文件,properties文件编译/打包的时候放在resource目录下-->
             <resource>
-                <directory>${basedir}/src/main/java</directory>
+                <directory>${basedir}/src</directory>
                 <includes>
                     <include>**/*.properties</include>
                     <include>**/*.xml</include>
@@ -31,10 +31,10 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
-                <version>3.0.4</version>
+                <version>1.2</version>
                 <configuration>
                     <findbugsXmlOutput>true</findbugsXmlOutput>
-                    <!--<findbugsXmlWithMessages>true</findbugsXmlWithMessages>-->
+                    <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
                     <xmlOutput>true</xmlOutput>
                 </configuration>
             </plugin>
@@ -63,7 +63,7 @@
                         </property>
                         <property>
                             <name>listener</name>
-                            <value>org.uncommons.reportng.HTMLReporter</value>
+                            <value>org.testng.reporters.XMLReporter</value>
                         </property>
                     </properties>
                     <testFailureIgnore>false</testFailureIgnore>
