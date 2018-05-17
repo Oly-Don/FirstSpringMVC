@@ -50,7 +50,7 @@
                         <!-- 在package 阶段触发执行findbugs检查，比如执行 mvn clean package -->
                         <phase>test</phase>
                         <goals>
-                            <goal>check</goal>
+                            <goal>findbugs</goal>
                         </goals>
                     </execution>
                 </executions>
