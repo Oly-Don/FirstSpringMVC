@@ -1,3 +1,7 @@
 FastJSON库
 JSONArray：相当于List<Object>
 JSONObject：相当于Map<String, Object>
+
+接口测试核心类
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;

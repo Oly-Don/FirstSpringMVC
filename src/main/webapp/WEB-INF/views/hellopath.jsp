@@ -6,7 +6,7 @@
 </head>
 <body>
 <h2>run addPath method</h2>${requestScope.message}
-<h3>com.oly.controller.test.HelloWorldController.addPath</h3>
+<h3>com.oly.set.controller.test.HelloWorldController.addPath</h3>
 
 </body>
 </html>

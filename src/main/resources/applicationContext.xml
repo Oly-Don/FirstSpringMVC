@@ -65,7 +65,7 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="configLocation" value="classpath:mybatis.xml"/>
-        <property name="mapperLocations" value="classpath*:com/oly/dao/xml/*Mapper.xml"/>
+        <property name="mapperLocations" value="classpath*:com/oly/set/dao/xml/*Mapper.xml"/>
     </bean>
 
     <!-- 配置SqlSessionTemplate -->
@@ -74,7 +74,7 @@
     </bean>
     <!-- 配置mybatis mapper接口，扫描所有dao -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.oly.dao"/>
+        <property name="basePackage" value="com.oly.set.dao"/>
         <property name="sqlSessionTemplateBeanName" value="sqlSessionTemplate"/>
     </bean>
 
@@ -94,7 +94,7 @@
     </tx:advice>
 
     <aop:config>
-        <aop:pointcut id="serviceMethods" expression="execution(* com.oly.service..*(..))"/>
+        <aop:pointcut id="serviceMethods" expression="execution(* com.oly.set.service.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethods"/>
     </aop:config>
 

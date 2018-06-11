@@ -46,7 +46,7 @@
 
     <!--    &lt;!&ndash;add tyd  2018年4月7日14:08:24&ndash;&gt;
         <typeAliases>
-            <typeAlias alias="RunnerVo" type="com.oly.entity.RunnerVo" />
+            <typeAlias alias="RunnerVo" tyRunnerVoerVo" />
         </typeAliases>
         <mappers>
             <mapper resource="com/oly/dao/xml/RunnerVoMapper.xml" />

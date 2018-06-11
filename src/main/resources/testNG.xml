@@ -19,7 +19,7 @@ http://www.yiibai.com/testng/junit-vs-testng-comparison.html#article-start
     <!--testng 格式-->
     <test name="JUnitTests" thread-count="5" time-out="100000" parallel="methods">
         <classes>
-            <class name="com.oly.web.http.RDPReceiveTest">
+            <class name="RDPReceiveTest">
                 <methods>
                     <include name = "tesCargoBack" />
                 </methods>

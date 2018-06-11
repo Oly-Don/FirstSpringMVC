@@ -7,6 +7,6 @@
 <body>
 <h2>run helloworld program</h2>
 ${requestScope.message}
-<h3>com.oly.controller.test.HelloWorldController.helloWorld</h3>
+<h3>com.oly.set.controller.test.HelloWorldController.helloWorld</h3>
 </body>
 </html>
