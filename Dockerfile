@@ -10,4 +10,4 @@ RUN makedir /data/ &\
 	docker save $(docker images -q) -o /data/images.zip
 	
 VOLUME /data
-EXPORT 22
+EXPOSE 22
