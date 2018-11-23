@@ -18,6 +18,7 @@ http://www.yiibai.com/testng/junit-vs-testng-comparison.html#article-start
     <!--<test name="JUnitTests" junit="true">-->
     <!--testng 格式-->
     <test name="JUnitTests" thread-count="5" time-out="100000" parallel="methods">
+<<<<<<< HEAD
         <classes>
             <class name="RDPReceiveTest">
                 <methods>
@@ -26,6 +27,13 @@ http://www.yiibai.com/testng/junit-vs-testng-comparison.html#article-start
             </class>
             <!--<class name="publish.op.SuitOpPubTask"/>-->
         </classes>
+=======
+        <packages>
+            <package name="com.oly.icip">
+                <include name="*est*"/>
+            </package>
+        </packages>
+>>>>>>> 2c2119c675c733a8e081329c8c062ac5aaad4457
     </test>
     <listeners>
         <!--<listener class-name="drivers.listener.RetryListerner"/>-->
