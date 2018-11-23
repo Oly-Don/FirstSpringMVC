@@ -7,6 +7,6 @@ RUN mkdir /data/ &&\
 RUN systemctl start docker && \
 	docker pull $images &&\
 	docker save $images  -o /data/images.zip
-	
+
 VOLUME /data
 EXPOSE 22
