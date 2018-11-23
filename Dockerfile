@@ -1,4 +1,4 @@
-FROM centos:7.4
+FROM centos
 
 ENV images="gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.13 "
 
